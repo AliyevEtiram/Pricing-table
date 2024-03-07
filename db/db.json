@@ -1,1 +1,38 @@
-{}
+{
+  "period": [
+    {
+      "monthly": [
+        {
+          "id": "Basic",
+          "price": "Free",
+          "acces": "No access to database",
+          "size": "Downloadable data size 1GB",
+          "availability": "Availability period 1 month"
+        },
+        {
+          "id": "Standart",
+          "price": "$29.99",
+          "acces": "Limited access to database draft",
+          "size": "Downloadable data size 40GB",
+          "availability": "Availability period 1 month"
+        }
+      ],
+      "yearly": [
+        {
+          "id": "Premium",
+          "price": "$69.99",
+          "acces": "Limitless access to database",
+          "size": "Downloadable data size 1TB",
+          "availability": "Availability period 1 year"
+        },
+        {
+          "id": "Ultimate",
+          "price": "$199.99",
+          "acces": "Limitless access to database",
+          "size": "Downloadable data size 4TB",
+          "availability": "Availability period 1 year"
+        }
+      ]
+    }
+  ]
+}
