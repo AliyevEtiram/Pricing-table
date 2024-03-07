@@ -51,4 +51,43 @@ $(document).ready(() => {
     $("#bestSize").text(standartType.size);
     $("#bestAvailability").text(standartType.availability);
   }
+  let chooseSimpleBtn = $("#chooseSimple");
+  chooseSimpleBtn.click(() => {
+    let simpleOffer = chooseSimpleBtn.parent().children(":first").text();
+
+    let popup = $(".popup");
+    popup.css({
+      left: "4%",
+    });
+    popup.text("you've choosed " + simpleOffer);
+    setTimeout(() => {
+      popup.css("left", "-150%");
+    }, 1300);
+  });
+  let chooseBestBtn = $("#chooseBest");
+  chooseBestBtn.click(() => {
+    let bestOffer = chooseBestBtn.parent().children(":first").text();
+
+    let popup = $(".popup");
+    popup.css({
+      left: "4%",
+    });
+    popup.text("you've choosed " + bestOffer);
+    setTimeout(() => {
+      popup.css("left", "-150%");
+    }, 1300);
+  });
+
+  let heart = $(".fa-heart");
+  heart.css("cursor", "pointer");
+
+  heart.click(() => {
+    if (heart.hasClass("fa-regular")) {
+      heart.removeClass("fa-regular");
+      heart.toggleClass("fa-solid");
+    } else {
+      heart.removeClass("fa-solid");
+      heart.toggleClass("fa-regular");
+    }
+  });
 });

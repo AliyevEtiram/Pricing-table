@@ -125,3 +125,20 @@ body {
 a {
   color: #0066e9a1;
 }
+.popup {
+  width: 204px;
+  height: 76px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -150%;
+  top: 50%;
+  border-radius: 12px;
+  color: oldlace;
+  letter-spacing: 2px;
+  transition: 0.6s all ease-in-out;
+  background-color: #0066e9a1;
+  font-size: 12px;
+}
