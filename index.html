@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Pricing table</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/pics/file-invoice-solid.svg"
+    />
+  </head>
 
-    <link rel="stylesheet" href="./dist/css/styl.css" />
-    <title>Document</title>
-</head>
+  <body>
+    <div class="wrapper">
+      <h1 id="title">Pricing Table</h1>
+      <p id="text">
+        Choose the plan that suits you best
+        <i class="fa-regular fa-heart" style="color: #d11515"></i>
+      </p>
 
-<body>
-    <h1 id="title">Pricing Table</h1>
-    <p id="text"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div id="button_box">
+        <!-- <div id="btn"></div> -->
+        <button id="monthly" type="button" class="active">monthly</button>
+        <button id="yearly" type="button">yearly</button>
+      </div>
 
-    <div id="button_box">
-        <div id="btn"></div>
-        <button id="toggle_btn" class="monthly">monthly</button>
-        <button id="toggle_btn" class="yearly">yearly</button>
+      <div id="lists">
+        <div class="lists__basic">
+          <h4 id="simpleOffer"></h4>
+          <h1 id="simplePrice"></h1>
+          <li id="simpleAccess"></li>
+          <li id="simpleSize"></li>
+          <li id="simpleAvailability"></li>
+          <button id="chooseSimple">choose</button>
+        </div>
+        <div class="lists__standard">
+          <h4 id="bestOffer"></h4>
+          <h1 id="bestPrice"></h1>
+          <li id="bestAcces"></li>
+          <li id="bestSize"></li>
+          <li id="bestAvailability"></li>
+          <button id="chooseBest">choose</button>
+        </div>
+      </div>
     </div>
-
-    <div id="lists">
-        <ul class="lists__basic">
-            <li>lk</li>
-        </ul>
-        <ul class="lists__standard">
-            <li>po</li>
-        </ul>
-    </div>
-
+    <p id="copyright">
+      created with love by
+      <a href="https://github.com/khanjanov" target="_blank">Karim Khanjanov</a>
+      and
+      <a href="https://github.com/AliyevEtiram" target="_blank"
+        >Aliyev Etiram</a
+      >
+    </p>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js"></script>
-</body>
-
+  </body>
 </html>
